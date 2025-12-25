@@ -1,0 +1,85 @@
+📘 ASC Project — Run Manual (Backend + Frontend)
+
+This manual explains how to start the Backend (FastAPI) and Frontend (React + Vite) for the Acoustic Scene Classification project.
+
+🚀 1) Starting the Backend (FastAPI)
+
+Follow these steps in PowerShell (Terminal 1):
+
+Step 1 — Navigate to the backend folder
+cd C:\Users\Jeet Raha\Desktop\ASC-Project\backend
+
+Step 2 — Activate the Python virtual environment
+..\ml\venv\Scripts\activate
+
+Step 3 — (Only first time) Install backend dependencies
+
+If uvicorn or FastAPI is not installed, run:
+
+pip install uvicorn fastapi python-multipart
+
+Step 4 — Start the backend server
+uvicorn main:app --reload
+
+Expected output:
+
+You should see:
+
+Uvicorn running on http://127.0.0.1:8000
+
+Backend test URL:
+
+Open this in browser:
+
+http://127.0.0.1:8000/docs
+
+🎨 2) Starting the Frontend (React + Vite)
+
+Open a second PowerShell window (Terminal 2) and follow these steps:
+
+Step 1 — Navigate to the frontend project
+cd C:\Users\Jeet Raha\Desktop\ASC-Project\frontend\frontend
+
+Step 2 — Install frontend dependencies (first time only)
+npm install
+
+Step 3 — Start the frontend development server
+npm run dev
+
+Expected output:
+
+You will see something like:
+
+VITE v4.0  ready in 500ms
+➜  Local:   http://localhost:5173/
+
+Frontend preview URL:
+
+Open:
+
+http://localhost:5173
+
+🧪 3) How to Test the Full System
+
+Start backend → http://127.0.0.1:8000/docs
+
+Start frontend → http://localhost:5173
+
+Upload a .wav audio file in the UI
+
+Click Predict
+
+View classification output inside the Result box
+
+🛑 Stopping the Servers
+
+Backend:
+
+Ctrl + C
+deactivate   (optional)
+
+
+Frontend:
+
+Ctrl + C
+

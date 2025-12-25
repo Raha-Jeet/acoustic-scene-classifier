@@ -1,0 +1,28 @@
+@"
+# =====================
+# ML Models (IMPORTANT)
+# =====================
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+ml/
+backend/model/
+
+# =====================
+# Datasets
+# =====================
+ESC-50-master/
+*.wav
+*.mp3
+
+# =====================
+# Cache & Env
+# =====================
+__pycache__/
+.ipynb_checkpoints/
+venv/
+.env
+"@ | Out-File -Encoding UTF8 .gitignore
